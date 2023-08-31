@@ -1,0 +1,23 @@
+
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+    
+<p>
+    <a class="btn btn-light" href="{% url 'kot_KOT_list' %}">
+    KOT Listing
+    </a>
+</p>
+    
+<table class="table">
+    <tr><td>last_updated</td><td>{{ object.last_updated }}</td></tr>
+    <tr><td>staff_id</td><td>{{ object.staff_id }}</td></tr>
+    <tr><td>out_time</td><td>{{ object.out_time }}</td></tr>
+    <tr><td>created</td><td>{{ object.created }}</td></tr>
+    <tr><td>in_time</td><td>{{ object.in_time }}</td></tr>
+    <tr><td>status</td><td>{{ object.status }}</td></tr>
+    <tr><td>order_channel</td><td>{{ object.order_channel }}</td></tr>
+</table>
+<a class="btn btn-primary" href="{{object.get_update_url}}">Edit</a>
+
+{% endblock %}

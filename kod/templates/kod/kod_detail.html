@@ -1,0 +1,21 @@
+
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+    
+<p>
+    <a class="btn btn-light" href="{% url 'kod_KOD_list' %}">
+    KOD Listing
+    </a>
+</p>
+    
+<table class="table">
+    <tr><td>last_updated</td><td>{{ object.last_updated }}</td></tr>
+    <tr><td>created</td><td>{{ object.created }}</td></tr>
+    <tr><td>staff_id</td><td>{{ object.staff_id }}</td></tr>
+    <tr><td>kod_nemu_item</td><td>{{ object.kod_nemu_item }}</td></tr>
+    <tr><td>kod_status</td><td>{{ object.kod_status }}</td></tr>
+</table>
+<a class="btn btn-primary" href="{{object.get_update_url}}">Edit</a>
+
+{% endblock %}

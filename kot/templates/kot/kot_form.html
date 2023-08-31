@@ -1,0 +1,56 @@
+
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+    
+<p>
+    <a class="btn btn-light" href="{% url 'kot_KOT_list' %}">
+    KOT Listing
+    </a>
+</p>
+    
+<form method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+  {{form.errors}}
+  <div class="form-group row">
+      <label class="col-sm-2 col-form-label" for="last_updated">last_updated: </label>
+      <input class="form-control col-sm-10"
+         id="last_updated" type="datetime-local"
+         name="last_updated" value="{{ object.last_updated }}" disabled>
+  </div>
+  <div class="form-group row">
+      <label class="col-sm-2 col-form-label" for="staff_id">staff_id: </label>
+      <input class="form-control col-sm-10"
+         id="staff_id" type="text"
+         name="staff_id" value="{{ object.staff_id }}">
+  </div>
+  <div class="form-group row">
+      <label class="col-sm-2 col-form-label" for="out_time">out_time: </label>
+      <input class="form-control col-sm-10"
+         id="out_time" type="datetime-local"
+         name="out_time" value="{{ object.out_time }}">
+  </div>
+  <div class="form-group row">
+      <label class="col-sm-2 col-form-label" for="created">created: </label>
+      <input class="form-control col-sm-10"
+         id="created" type="datetime-local"
+         name="created" value="{{ object.created }}" disabled>
+  </div>
+  <div class="form-group row">
+      <label class="col-sm-2 col-form-label" for="in_time">in_time: </label>
+      <input class="form-control col-sm-10"
+         id="in_time" type="datetime-local"
+         name="in_time" value="{{ object.in_time }}">
+  </div>
+  <div class="form-group row">
+      <label class="col-sm-2 col-form-label" for="status">status: </label>
+      {{ form.status }}
+  </div>
+  <div class="form-group row">
+      <label class="col-sm-2 col-form-label" for="order_channel">order_channel: </label>
+      {{ form.order_channel }}
+  </div>
+  <input type="submit" value="Save" class="btn btn-primary">
+</form>
+
+{% endblock %}

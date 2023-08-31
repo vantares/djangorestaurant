@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="m-2"><h4>menu</h4></div>
+<div class="m-2"><a class="btn btn-light" href="{% url 'menu_Category_list' %}">Category Listing</a></div>
+<div class="m-2"><a class="btn btn-light" href="{% url 'menu_Item_list' %}">Item Listing</a></div>
+<div class="m-2"><h4>kod</h4></div>
+<div class="m-2"><a class="btn btn-light" href="{% url 'kod_KOD_list' %}">KOD Listing</a></div>
+<div class="m-2"><a class="btn btn-light" href="{% url 'kod_Status_list' %}">Status Listing</a></div>
+<div class="m-2"><h4>kot</h4></div>
+<div class="m-2"><a class="btn btn-light" href="{% url 'kot_KOTMenuItem_list' %}">KOTMenuItem Listing</a></div>
+<div class="m-2"><a class="btn btn-light" href="{% url 'kot_KOTStatus_list' %}">KOTStatus Listing</a></div>
+<div class="m-2"><a class="btn btn-light" href="{% url 'kot_KOT_list' %}">KOT Listing</a></div>
+<div class="m-2"><a class="btn btn-light" href="{% url 'kot_OrderChannel_list' %}">OrderChannel Listing</a></div>
+{% endblock %}
