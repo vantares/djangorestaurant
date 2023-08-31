@@ -17,6 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.views.generic import TemplateView
+from drf_spectacular.views import SpectacularAPIView, SpectacularRedocView, SpectacularSwaggerView
 
 
 urlpatterns = [
@@ -25,4 +26,12 @@ urlpatterns = [
     path('kod/', include('kod.urls')),
     path('kot/', include('kot.urls')),
     path('admin/', admin.site.urls),
+]
+
+urlpatterns += [
+    # YOUR PATTERNS
+    path('api/v1/schema/', SpectacularAPIView.as_view(), name='schema'),
+    # Optional UI:
+    path('api/v1/schema/swagger-ui/', SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),
+    path('api/v1/schema/redoc/', SpectacularRedocView.as_view(url_name='schema'), name='redoc'),
 ]
