@@ -109,3 +109,5 @@ Se puede abordar esta preocupación introduciendo ciertos cambios en este modelo
 Otro problema es hacer que los clientes esperen por su comida. Tanto para los clientes que comen en el restaurante como para los que comen comida para llevar, esto se puede ayudar proporcionando actualizaciones de estado directamente al comensal. Aquí es vital monitorear el estado de los KOT individuales. A medida que el KOT avanza en la cocina, su estado se actualiza en la `**KOT**`tabla. Este mecanismo brinda una actualización en tiempo real a los clientes sobre el estado de sus pedidos.
 
 ![https://www.vertabelo.com/blog/serving-delicious-food-and-data-a-data-model-for-restaurants/kot-status.png](https://www.vertabelo.com/blog/serving-delicious-food-and-data-a-data-model-for-restaurants/kot-status.png)
+
+### PArticularidades al Implementar microservicios
