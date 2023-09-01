@@ -8,9 +8,9 @@ Un sistema de gestión de restaurantes debe realizar la mayoría de estas activi
 
 ### El modelo de datos del restaurante
 
-Este artículo trata sobre el diseño de un modelo de datos completo para un restaurante (para cenar o para llevar). También abordaremos dos grandes problemas que encuentran las personas en el negocio de la restauración en sus actividades diarias. Finalmente, pensaremos en los cambios necesarios para incorporar esas capacidades a un sistema existente.
+Este artículo trata sobre el diseño de un modelo de datos completo para un restaurante (para cenar o para llevar). También abordaremos dos grandes problemas que encuentran las personas en el negocio de la restaurante en sus actividades diarias. Finalmente, pensaremos en los cambios necesarios para incorporar esas capacidades a un sistema existente.
 
-Un modelo de datos para un negocio de restauración debe tener las siguientes características elementales:
+Un modelo de datos para un negocio de restaurante debe tener las siguientes características elementales:
 
 - **Gestión de KOT (Token de pedido de cocina)**
 - **Gestión KOD (entrega de pedidos de cocina)**
@@ -114,4 +114,4 @@ Otro problema es hacer que los clientes esperen por su comida. Tanto para los cl
 
 Al descomponer nuestras aplicaciones en servicios separados se puede perder
 - Integridad referencial
-- Normalización de datos
+- Normalización de datosgit 
