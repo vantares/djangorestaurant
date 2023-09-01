@@ -110,4 +110,8 @@ Otro problema es hacer que los clientes esperen por su comida. Tanto para los cl
 
 ![https://www.vertabelo.com/blog/serving-delicious-food-and-data-a-data-model-for-restaurants/kot-status.png](https://www.vertabelo.com/blog/serving-delicious-food-and-data-a-data-model-for-restaurants/kot-status.png)
 
-### PArticularidades al Implementar microservicios
+### Particularidades al Implementar microservicios
+
+Al descomponer nuestras aplicaciones en servicios separados se puede perder
+- Integridad referencial
+- Normalización de datos
